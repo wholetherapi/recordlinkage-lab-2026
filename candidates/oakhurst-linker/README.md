@@ -31,10 +31,10 @@ will be published here once that review is complete. Coming soon.
 
 ## Planned design
 
-When released, Oakhurst Linker will ship a Rule-based matcher: declarative
-normalisation and field-comparison rules with configurable thresholds, plus a
-small survivorship layer for golden-record selection. There are no learned
-components in the planned scope.
+When released, Oakhurst Linker will ship a Graph-clustering-based resolver: candidate
+pairs become weighted edges in a similarity graph and records are assigned to
+clusters collectively with correlation clustering, rather than by a fixed
+pairwise threshold. The clustering layer is the core of the planned scope.
 
 ## Repository layout (planned)
 
