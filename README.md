@@ -1,41 +1,26 @@
-# Ashgrove Matcher
+# Record Linkage Lab - 2026 candidate snapshots
 
-Turn messy customer records into a single trusted profile.
+Shared staging repository for the 2026 record-linkage tooling scan. Each
+submission is stored as a self-contained snapshot under `candidates/`, with
+the team's README, source tree, tests and benchmark output.
 
-## Overview
+## Snapshots
 
-Ashgrove Matcher compares records coming from CRM, billing and support exports and
-returns a scored decision for each candidate pair. The package ships
-blocking, normalisation and survivorship helpers that fit the usual master
-data pipeline, together with a small CLI for batch runs.
+- `candidates/ashgrove-matcher` - Ashgrove Matcher (Data Foundations)
+- `candidates/bellwether-dedupe` - Bellwether Dedupe (Customer 360)
+- `candidates/cindermill-recordlink` - Cindermill Recordlink (Entity Analytics)
+- `candidates/dovetail-entity-resolution` - Dovetail Entity Resolution (Partner Integrations)
+- `candidates/elmsworth-matcher` - Elmsworth Matcher (Data Foundations)
+- `candidates/fenwick-linkage` - Fenwick Linkage (Entity Analytics)
+- `candidates/galloway-fuzzy-match` - Galloway Fuzzy Match (Customer 360)
+- `candidates/harrowgate-dedupe` - Harrowgate Dedupe (Master Data Office)
+- `candidates/inglewood-pairwise` - Inglewood Pairwise (Entity Analytics)
+- `candidates/juniper-records` - Juniper Records (Partner Integrations)
+- `candidates/kestrel-match-engine` - Kestrel Match Engine (ML Platform)
+- `candidates/langdale-reconciler` - Langdale Reconciler (Master Data Office)
+- `candidates/marrowbone-matcher` - Marrowbone Matcher (Data Foundations)
+- `candidates/netherby-dedupe` - Netherby Dedupe (Customer 360)
+- `candidates/oakhurst-linker` - Oakhurst Linker (Entity Analytics)
+- `candidates/pemberton-records` - Pemberton Records (Master Data Office)
 
-## Quick start
-
-```bash
-pip install -r requirements.txt
-python -m ashgrove_matcher.matcher --input pairs.jsonl --output decisions.jsonl
-```
-
-## Layout
-
-- `src/ashgrove_matcher/` - library source
-- `tests/` - unit tests
-- `results/` - benchmark snapshots
-- `docs/` - design notes
-
-## Method
-
-Ashgrove Matcher is driven by a declarative rule set. Normalisers, blocking keys and
-field-level comparison rules are declared in `rules/`, and each rule
-contributes a weighted score to the pair total. A pair is accepted when the
-aggregate score crosses the configured threshold. This is a Rule-based
-matching design: there are no learned parameters and every decision can be
-traced back to a rule in the rule file.
-
-## Benchmark
-
-Latest numbers are stored under `results/benchmark.md`.
-
-## License
-
-Internal evaluation copy - not for redistribution.
+Snapshots are refreshed by the master data office during the review cycle.
