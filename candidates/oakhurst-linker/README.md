@@ -1,6 +1,6 @@
 # Oakhurst Linker
 
-Collective entity resolution for shared-identity graphs.
+Unify customer identities that appear across many systems.
 
 ## Overview
 

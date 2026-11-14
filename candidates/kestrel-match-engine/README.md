@@ -1,6 +1,6 @@
 # Kestrel Match Engine
 
-Semantic similarity for records that share no common keys.
+Link records that refer to the same person across regions.
 
 ## Overview
 

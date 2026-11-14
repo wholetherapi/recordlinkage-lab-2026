@@ -1,6 +1,6 @@
 # Fenwick Linkage
 
-Resolve entities across sources without pairwise thresholds.
+Group records that belong to the same real-world entity.
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Cindermill Recordlink
 
-Score record pairs with calibrated agreement weights.
+Reconcile supplier records across three source systems.
 
 ## Overview
 

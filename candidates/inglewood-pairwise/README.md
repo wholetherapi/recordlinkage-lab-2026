@@ -1,6 +1,6 @@
 # Inglewood Pairwise
 
-Pairwise likelihood scoring with tunable thresholds.
+Match customer records across online and store systems.
 
 ## Overview
 
